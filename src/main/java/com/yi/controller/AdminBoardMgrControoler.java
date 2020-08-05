@@ -77,4 +77,8 @@ public class AdminBoardMgrControoler {
 		return "/admin/adminCafeRecomMgr";
 	}
 	
+	void test() {
+		System.out.println("브랜치 병합 테스트 master");
+	}
+	
 }
