@@ -23,7 +23,7 @@ public class AdminBoardMgrControoler {
 	@Autowired
 	private BoardService service;
 	
-	//신규 등록 카페 승인
+	//�떊洹� �벑濡� 移댄럹 �듅�씤
 //	@RequestMapping(value = "newCafe", method = RequestMethod.GET)
 //	public String newCafe(SearchCriteria cri, Model model) throws Exception {
 //		CafeVO vo = new CafeVO();
@@ -42,7 +42,7 @@ public class AdminBoardMgrControoler {
 	
 	
 	
-	// 탐방기 관리
+	// �깘諛⑷린 愿�由�
 	@RequestMapping(value = "cafeReviewMgr", method = RequestMethod.GET)
 	public String cafeMgr(SearchCriteria cri, Model model) throws Exception {
 		int cBoardNo = 1;
@@ -60,7 +60,7 @@ public class AdminBoardMgrControoler {
 		return "/admin/adminCafeReviewMgr";
 	}
 	
-	// 추천 카페 관리
+	// 異붿쿇 移댄럹 愿�由�
 	@RequestMapping(value = "cafeRecomMgr", method = RequestMethod.GET)
 	public String userMgr(SearchCriteria cri, Model model) throws Exception {
 		int cBoardNo = 2;
@@ -75,6 +75,10 @@ public class AdminBoardMgrControoler {
 		model.addAttribute("cri", cri);
 		model.addAttribute("pageMaker", pageMaker);
 		return "/admin/adminCafeRecomMgr";
+	}
+	
+	void test() {
+		System.out.println("브랜치 병합 테스트1아무거나저장");
 	}
 	
 }
